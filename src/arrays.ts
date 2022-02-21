@@ -95,7 +95,7 @@ export function makeMath(addends: number[]): string {
         return "0=0";
     }
     return (
-        addends.reduce(
+        [...addends].reduce(
             (currentTotal: number, num: number) => currentTotal + num,
             0
         ) +
@@ -126,15 +126,17 @@ export function injectPositive(values: number[]): number[] {
         const negativeIndex = values
             .map((num: number): number => (num < 0 ? -1 : num))
             .indexOf(-1);
-        return values.splice(
+        const positives = [...values];
+        positives.splice(
             negativeIndex + 1,
             0,
-            values
+            [...values]
                 .slice(0, negativeIndex)
                 .reduce(
                     (currentTotal: number, num: number) => currentTotal + num,
                     0
                 )
         );
+        return positives;
     }
 }
