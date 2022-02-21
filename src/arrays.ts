@@ -1,3 +1,5 @@
+import { appendFileSync } from "fs";
+
 /**
  * Consume an array of numbers, and return a new array containing
  * JUST the first and last number. If there are no elements, return
@@ -89,7 +91,17 @@ export function allRGB(colors: string[]): boolean {
  * And the array [] would become "0=0".
  */
 export function makeMath(addends: number[]): string {
-    return "";
+    if (addends.length === 0) {
+        return "0=0";
+    }
+    return (
+        addends.reduce(
+            (currentTotal: number, num: number) => currentTotal + num,
+            0
+        ) +
+        "=" +
+        addends.join("+")
+    );
 }
 
 /**
