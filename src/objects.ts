@@ -1,3 +1,4 @@
+import { stringify } from "querystring";
 import { Question, QuestionType } from "./interfaces/question";
 
 /**
@@ -10,7 +11,17 @@ export function makeBlankQuestion(
     name: string,
     type: QuestionType
 ): Question {
-    return {};
+    const blank: Question = {
+        id: id,
+        name: name,
+        body: "",
+        type: type,
+        options: [],
+        expected: "",
+        published: false,
+        points: 1
+    };
+    return blank;
 }
 
 /**
