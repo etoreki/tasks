@@ -217,6 +217,28 @@ export function changeQuestionTypeById(
 }
 
 /**
+ * Consumes a Question and returns an identical question except
+ * the options field has had one option replaced. If the index
+ * to replace was -1 the new option doesn't replace an old option
+ * and is instead added to the end
+ */
+export function optionReplace(
+    question: Question,
+    indexOption: number,
+    newOption: string
+): Question {
+    if (indexOption === -1) {
+        return { ...question, options: [...question.options, newOption] };
+    } else {
+        const newOptions = [...question.options];
+        newOptions.splice(indexOption, 1, newOption);
+        return {
+            ...question,
+            options: newOptions
+        };
+    }
+}
+/**
  * Consumes an array of Questions and produces a new array of Questions, where all
  * the Questions are the same EXCEPT for the one with the given `targetId`. That
  * Question should be the same EXCEPT that its `option` array should have a new element.
@@ -232,7 +254,12 @@ export function editOption(
     targetOptionIndex: number,
     newOption: string
 ) {
-    return [];
+    return questions.map(
+        (question: Question): Question =>
+            question.id === targetId
+                ? optionReplace(question, targetOptionIndex, newOption)
+                : question
+    );
 }
 
 /***
