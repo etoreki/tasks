@@ -280,7 +280,7 @@ export function duplicateQuestionInArray(
     duplicated.splice(
         targetIndex + 1,
         0,
-        duplicateQuestion(newId, questions[targetIndex])
+        duplicateQuestion(newId, { ...questions[targetIndex] })
     );
     return duplicated;
 }
