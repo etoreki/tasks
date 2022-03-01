@@ -51,7 +51,9 @@ export function findQuestion(
  * with the given `id`.
  */
 export function removeQuestion(questions: Question[], id: number): Question[] {
-    return questions.filter((question: Question): boolean => question.id != id);
+    return questions.filter(
+        (question: Question): boolean => question.id !== id
+    );
 }
 
 /***
@@ -183,7 +185,9 @@ export function renameQuestionById(
 ): Question[] {
     return questions.map(
         (question: Question): Question =>
-            question.id === targetId ? { ...question, name: newName } : question
+            question.id === targetId
+                ? { ...question, name: newName }
+                : { ...question }
     );
 }
 
@@ -199,19 +203,19 @@ export function changeQuestionTypeById(
     targetId: number,
     newQuestionType: QuestionType
 ): Question[] {
-    if (newQuestionType != "multiple_choice_question") {
+    if (newQuestionType !== "multiple_choice_question") {
         return questions.map(
             (question: Question): Question =>
                 question.id === targetId
                     ? { ...question, type: newQuestionType, options: [] }
-                    : question
+                    : { ...question }
         );
     } else {
         return questions.map(
             (question: Question): Question =>
                 question.id === targetId
                     ? { ...question, type: newQuestionType }
-                    : question
+                    : { ...question }
         );
     }
 }
@@ -258,7 +262,7 @@ export function editOption(
         (question: Question): Question =>
             question.id === targetId
                 ? optionReplace(question, targetOptionIndex, newOption)
-                : question
+                : { ...question }
     );
 }
 
@@ -273,14 +277,19 @@ export function duplicateQuestionInArray(
     targetId: number,
     newId: number
 ): Question[] {
-    const duplicated = [...questions];
+    const duplicated = questions.map(
+        (question: Question): Question => ({
+            ...question,
+            options: [...question.options]
+        })
+    );
     const targetIndex = questions.findIndex(
         (question: Question): boolean => question.id === targetId
     );
     duplicated.splice(
         targetIndex + 1,
         0,
-        duplicateQuestion(newId, { ...questions[targetIndex] })
+        duplicateQuestion(newId, questions[targetIndex])
     );
     return duplicated;
 }
