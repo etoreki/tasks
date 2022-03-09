@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 
 interface dhValueButtonProps {
-    // The type is "a function that consumes a boolean and returns nothing"
     setDhValue: (newDhValue: number) => void;
     dhValue: number;
 }
