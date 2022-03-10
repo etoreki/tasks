@@ -10,6 +10,7 @@ export function GiveAttempts(): JSX.Element {
     const [addedAttempts, setAddedAttempts] = useState<number>(0);
     return (
         <div>
+            <h3>Give Attemtps</h3>
             <div>Attempts Left: {attempts}</div>
             <Form.Group controlId="formAddedAttempts">
                 <Form.Label>Number of Attempts to add:</Form.Label>

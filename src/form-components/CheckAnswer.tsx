@@ -17,6 +17,7 @@ export function CheckAnswer({
     }
     return (
         <div>
+            <h3>Check Answer</h3>
             <Form.Group controlId="formMovieName">
                 <Form.Label>Your Answer:</Form.Label>
                 <Form.Control value={userAnswer} onChange={updateAnswer} />
