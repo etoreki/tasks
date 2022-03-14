@@ -45,9 +45,6 @@ function App(): JSX.Element {
                 src="https://miro.medium.com/max/1024/0*4ty0Adbdg4dsVBo3.png"
                 alt="Image Unavailable"
             />
-            <Button onClick={() => console.log("Hello World!")}>
-                Log Hello World
-            </Button>
             <Container>
                 <Row>
                     <Col>
