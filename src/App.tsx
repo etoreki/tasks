@@ -48,7 +48,7 @@ function App(): JSX.Element {
             />
             <Button onClick={() => console.log("Hello World!")}>
                 Log Hello World
-            </Button
+            </Button>
             <Container>
                 <Row>
                     <Col>
