@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import { ChangeType } from "./components/ChangeType";
 import { RevealAnswer } from "./components/RevealAnswer";
 import { StartAttempt } from "./components/StartAttempt";
@@ -45,6 +46,9 @@ function App(): JSX.Element {
                 src="https://miro.medium.com/max/1024/0*4ty0Adbdg4dsVBo3.png"
                 alt="Image Unavailable"
             />
+            <Button onClick={() => console.log("Hello World!")}>
+                Log Hello World
+            </Button
             <Container>
                 <Row>
                     <Col>
