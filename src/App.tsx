@@ -37,98 +37,12 @@ function App(): JSX.Element {
             <Container>
                 <Row>
                     <Col>
-                        <div
-                            style={{ border: "2px solid red", padding: "3px" }}
-                        >
-                            Task
-                        </div>
-                    </Col>
-                    <Col>
-                        <div
-                            style={{ border: "2px solid red", padding: "3px" }}
-                        >
-                            Status
-                        </div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <div
-                            style={{ border: "2px solid red", padding: "3px" }}
-                        >
-                            Header with new background color
-                        </div>
-                    </Col>
-                    <Col>
-                        <div
-                            style={{ border: "2px solid red", padding: "3px" }}
-                        >
-                            Done
-                        </div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <div
-                            style={{ border: "2px solid red", padding: "3px" }}
-                        >
-                            Image with alt text
-                        </div>
-                    </Col>
-                    <Col>
-                        <div
-                            style={{ border: "2px solid red", padding: "3px" }}
-                        >
-                            Done
-                        </div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <div
-                            style={{ border: "2px solid red", padding: "3px" }}
-                        >
-                            List with at least 3 elements
-                        </div>
-                    </Col>
-                    <Col>
-                        <div
-                            style={{ border: "2px solid red", padding: "3px" }}
-                        >
-                            Done
-                        </div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <div
-                            style={{ border: "2px solid red", padding: "3px" }}
-                        >
-                            Log Hellow World button
-                        </div>
-                    </Col>
-                    <Col>
-                        <div
-                            style={{ border: "2px solid red", padding: "3px" }}
-                        >
-                            Done
-                        </div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <div
-                            style={{ border: "2px solid red", padding: "3px" }}
-                        >
+                        <div style={{ backgroundColor: "red" }}>
                             2 Column format with red rectangles
                         </div>
                     </Col>
                     <Col>
-                        <div
-                            style={{ border: "2px solid red", padding: "3px" }}
-                        >
-                            Done
-                        </div>
+                        <div style={{ backgroundColor: "red" }}>Done</div>
                     </Col>
                 </Row>
             </Container>
