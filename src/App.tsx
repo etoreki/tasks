@@ -17,6 +17,7 @@ import { MultipleChoiceQuestion } from "./form-components/MultipleChoiceQuestion
 import { ChangeColor } from "./form-components/ChangeColor";
 import { Quizzer } from "./quizzer/Quizzer";
 import { Button } from "react-bootstrap";
+import quizzerSketch from "./assets/quizzerSketch.jpg";
 
 export function ShowHideTasks(): JSX.Element {
     const [visible, setVisible] = useState<boolean>(false);
@@ -74,6 +75,11 @@ function App(): JSX.Element {
     return (
         <div className="App">
             <Quizzer></Quizzer>
+            <img
+                src={quizzerSketch}
+                alt="Sketch of Quizzer"
+                width="10000pxl"
+            ></img>
             <ShowHideTasks></ShowHideTasks>
         </div>
     );
