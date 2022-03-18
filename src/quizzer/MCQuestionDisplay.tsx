@@ -7,7 +7,7 @@ export function MCQuestionDisplay({
 }: {
     question: Question;
 }): JSX.Element {
-    const [userAnswer, setUserAnswer] = useState<string>();
+    const [userAnswer, setUserAnswer] = useState<string>("");
     return (
         <div>
             <p>{question.body}</p>
@@ -15,7 +15,7 @@ export function MCQuestionDisplay({
                 <Form.Check
                     key={answer}
                     type="radio"
-                    name="answers"
+                    name={question.name + " answers"}
                     onChange={(e) => setUserAnswer(e.target.value)}
                     id={"answer-choice-" + answer}
                     label={answer}
@@ -23,6 +23,12 @@ export function MCQuestionDisplay({
                     checked={userAnswer === answer}
                 />
             ))}
+            <p>
+                Current Answer is:{" "}
+                {userAnswer === question.expected
+                    ? "Correct ✔️"
+                    : "Incorrect ❌"}
+            </p>
         </div>
     );
 }
