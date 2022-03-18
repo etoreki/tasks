@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import { Quiz } from "../interfaces/quiz";
 import sampleQuizzes from "../data/sample_quizzes.json";
-import { Question } from "../interfaces/question";
+import { Question, QuestionType } from "../interfaces/question";
+import { QuizDisplay } from "./Quiz";
 
 const QUIZZES = sampleQuizzes.map(
     (quiz): Quiz => ({
@@ -10,10 +11,7 @@ const QUIZZES = sampleQuizzes.map(
         questions: quiz.questions.map(
             (question): Question => ({
                 ...question,
-                type:
-                    question.type === "multiple_choice_question"
-                        ? "multiple_choice_question"
-                        : "short_answer_question"
+                type: question.type as QuestionType
             })
         )
     })
@@ -117,6 +115,7 @@ export function Quizzer(): JSX.Element {
                     </div>
                 )}
             </div>
+            <QuizDisplay quiz={currentQuiz}></QuizDisplay>
         </div>
     );
 }
