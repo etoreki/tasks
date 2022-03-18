@@ -1,3 +1,10 @@
-import React, { useState } from "react";
-import { Form } from "react-bootstrap";
+import React from "react";
 import { Question } from "../interfaces/question";
+
+export function MCQuestionDisplay({
+    question
+}: {
+    question: Question;
+}): JSX.Element {
+    return <div>{question.body}</div>;
+}
