@@ -3,6 +3,7 @@ import { Button, Col, Form, Row } from "react-bootstrap";
 import { Quiz } from "../interfaces/quiz";
 import sampleQuizzes from "../data/sample_quizzes.json";
 import { Question } from "../interfaces/question";
+import { QuizDisplay } from "./Quiz";
 
 const QUIZZES = sampleQuizzes.map(
     (quiz): Quiz => ({
@@ -117,6 +118,7 @@ export function Quizzer(): JSX.Element {
                     </div>
                 )}
             </div>
+            <QuizDisplay quiz={currentQuiz}></QuizDisplay>
         </div>
     );
 }

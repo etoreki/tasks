@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
+import { Question } from "../interfaces/question";
+import { Quiz } from "../interfaces/quiz";
 
-export function Quiz(): JSX.Element {
+export function QuizDisplay({ quiz }: { quiz: Quiz }): JSX.Element {
     const [onlyPublished, setOnlyPublished] = useState<boolean>(false);
     return (
         <div>
@@ -15,6 +17,11 @@ export function Quiz(): JSX.Element {
                     onChange={() => setOnlyPublished(!onlyPublished)}
                 />
             </div>
+            {quiz.questions.map((question: Question) => (
+                <div key={question.id}>
+                    <h4>{question.name}</h4>
+                </div>
+            ))}
         </div>
     );
 }
