@@ -78,7 +78,7 @@ function App(): JSX.Element {
             <img
                 src={quizzerSketch}
                 alt="Sketch of Quizzer"
-                width="10000pxl"
+                width="800pxl"
             ></img>
             <ShowHideTasks></ShowHideTasks>
         </div>
