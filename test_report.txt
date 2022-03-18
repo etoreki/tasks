@@ -21,8 +21,8 @@ PASS src/components/Counter.test.tsx
 PASS src/components/RevealAnswer.test.tsx
 PASS src/bad-components/ColoredBox.test.tsx
 PASS src/bad-components/ShoveBox.test.tsx
-PASS src/quizzer/Quizzer.test.tsx
 PASS src/quizzer/Quiz.test.tsx
+PASS src/quizzer/Quizzer.test.tsx
 FAIL src/App.test.tsx
   ● renders the course name somewhere
 
@@ -200,6 +200,183 @@ FAIL src/App.test.tsx
               [36m</button>[39m
             [36m</div>[39m
             [36m<div />[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [36m<h3>[39m
+                  [0mQuiz[0m
+                [36m</h3>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mid[39m=[32m"show-published-check"[39m
+                    [33mtype[39m=[32m"checkbox"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mfor[39m=[32m"show-published-check"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mOnly Show Published Questions[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<div>[39m
+                [36m<h4>[39m
+                  [0mAddition[0m
+                [36m</h4>[39m
+                [36m<span>[39m
+                  [0mShort Answer Question[0m
+                [36m</span>[39m
+              [36m</div>[39m
+              [36m<div>[39m
+                [36m<h4>[39m
+                  [0mLetters[0m
+                [36m</h4>[39m
+                [36m<span>[39m
+                  [0mShort Answer Question[0m
+                [36m</span>[39m
+              [36m</div>[39m
+              [36m<div>[39m
+                [36m<h4>[39m
+                  [0mColors[0m
+                [36m</h4>[39m
+                [36m<div>[39m
+                  [36m<p>[39m
+                    [0mWhich of these is a color?[0m
+                  [36m</p>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"form-check"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"form-check-input"[39m
+                      [33mid[39m=[32m"answer-choice-red"[39m
+                      [33mname[39m=[32m"Colors answers"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                      [33mvalue[39m=[32m"red"[39m
+                    [36m/>[39m
+                    [36m<label[39m
+                      [33mclass[39m=[32m"form-check-label"[39m
+                      [33mfor[39m=[32m"answer-choice-red"[39m
+                      [33mtitle[39m=[32m""[39m
+                    [36m>[39m
+                      [0mred[0m
+                    [36m</label>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"form-check"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"form-check-input"[39m
+                      [33mid[39m=[32m"answer-choice-apple"[39m
+                      [33mname[39m=[32m"Colors answers"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                      [33mvalue[39m=[32m"apple"[39m
+                    [36m/>[39m
+                    [36m<label[39m
+                      [33mclass[39m=[32m"form-check-label"[39m
+                      [33mfor[39m=[32m"answer-choice-apple"[39m
+                      [33mtitle[39m=[32m""[39m
+                    [36m>[39m
+                      [0mapple[0m
+                    [36m</label>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"form-check"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"form-check-input"[39m
+                      [33mid[39m=[32m"answer-choice-firetruck"[39m
+                      [33mname[39m=[32m"Colors answers"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                      [33mvalue[39m=[32m"firetruck"[39m
+                    [36m/>[39m
+                    [36m<label[39m
+                      [33mclass[39m=[32m"form-check-label"[39m
+                      [33mfor[39m=[32m"answer-choice-firetruck"[39m
+                      [33mtitle[39m=[32m""[39m
+                    [36m>[39m
+                      [0mfiretruck[0m
+                    [36m</label>[39m
+                  [36m</div>[39m
+                  [36m<p>[39m
+                    [0mCurrent Answer is:[0m
+                    [0m [0m
+                    [0mIncorrect ❌[0m
+                  [36m</p>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<div>[39m
+                [36m<h4>[39m
+                  [0mShapes[0m
+                [36m</h4>[39m
+                [36m<div>[39m
+                  [36m<p>[39m
+                    [0mWhat shape can you make with one line?[0m
+                  [36m</p>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"form-check"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"form-check-input"[39m
+                      [33mid[39m=[32m"answer-choice-square"[39m
+                      [33mname[39m=[32m"Shapes answers"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                      [33mvalue[39m=[32m"square"[39m
+                    [36m/>[39m
+                    [36m<label[39m
+                      [33mclass[39m=[32m"form-check-label"[39m
+                      [33mfor[39m=[32m"answer-choice-square"[39m
+                      [33mtitle[39m=[32m""[39m
+                    [36m>[39m
+                      [0msquare[0m
+                    [36m</label>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"form-check"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"form-check-input"[39m
+                      [33mid[39m=[32m"answer-choice-triangle"[39m
+                      [33mname[39m=[32m"Shapes answers"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                      [33mvalue[39m=[32m"triangle"[39m
+                    [36m/>[39m
+                    [36m<label[39m
+                      [33mclass[39m=[32m"form-check-label"[39m
+                      [33mfor[39m=[32m"answer-choice-triangle"[39m
+                      [33mtitle[39m=[32m""[39m
+                    [36m>[39m
+                      [0mtriangle[0m
+                    [36m</label>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"form-check"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"form-check-input"[39m
+                      [33mid[39m=[32m"answer-choice-circle"[39m
+                      [33mname[39m=[32m"Shapes answers"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                      [33mvalue[39m=[32m"circle"[39m
+                    [36m/>[39m
+                    [36m<label[39m
+                      [33mclass[39m=[32m"form-check-label"[39m
+                      [33mfor[39m=[32m"answer-choice-circle"[39m
+                      [33mtitle[39m=[32m""[39m
+                    [36m>[39m
+                      [0mcircle[0m
+                    [36m</label>[39m
+                  [36m</div>[39m
+                  [36m<p>[39m
+                    [0mCurrent Answer is:[0m
+                    [0m [0m
+                    [0mIncorrect ❌[0m
+                  [36m</p>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
           [36m</div>[39m
           [36m<img[39m
             [33malt[39m=[32m"Sketch of Quizzer"[39m
@@ -239,7 +416,7 @@ FAIL src/App.test.tsx
 -----------------------------|---------|----------|---------|---------|-------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------------|---------|----------|---------|---------|-------------------
-All files                    |   93.56 |    96.51 |   92.95 |   93.33 |                   
+All files                    |   92.53 |    95.45 |   91.21 |   92.27 |                   
  src                         |    99.2 |    98.21 |   98.68 |   99.15 |                   
   App.tsx                    |      75 |       50 |   66.66 |      75 | 67                
   arrays.ts                  |     100 |      100 |     100 |     100 |                   
@@ -268,9 +445,11 @@ All files                    |   93.56 |    96.51 |   92.95 |   93.33 |
   answer.ts                  |       0 |        0 |       0 |       0 |                   
   question.ts                |       0 |        0 |       0 |       0 |                   
   quiz.ts                    |       0 |        0 |       0 |       0 |                   
- src/quizzer                 |      44 |       75 |   35.71 |      44 |                   
-  Quiz.tsx                   |     100 |      100 |     100 |     100 |                   
-  Quizzer.tsx                |   41.66 |       75 |   30.76 |   41.66 | 29-55,81-94       
+ src/quizzer                 |   48.48 |    66.66 |      40 |   48.48 |                   
+  MCQuestionDisplay.tsx      |      75 |       50 |   66.66 |      75 | 19                
+  Quiz.tsx                   |      75 |      100 |   66.66 |      75 | 18                
+  Quizzer.tsx                |   41.66 |       50 |   30.76 |   41.66 | 27-53,79-92       
+  SAQuestionDisplay.tsx      |       0 |      100 |       0 |       0 | 9                 
 -----------------------------|---------|----------|---------|---------|-------------------
 Summary of all failing tests
 FAIL src/App.test.tsx
@@ -450,6 +629,183 @@ FAIL src/App.test.tsx
               [36m</button>[39m
             [36m</div>[39m
             [36m<div />[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [36m<h3>[39m
+                  [0mQuiz[0m
+                [36m</h3>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mid[39m=[32m"show-published-check"[39m
+                    [33mtype[39m=[32m"checkbox"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mfor[39m=[32m"show-published-check"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mOnly Show Published Questions[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<div>[39m
+                [36m<h4>[39m
+                  [0mAddition[0m
+                [36m</h4>[39m
+                [36m<span>[39m
+                  [0mShort Answer Question[0m
+                [36m</span>[39m
+              [36m</div>[39m
+              [36m<div>[39m
+                [36m<h4>[39m
+                  [0mLetters[0m
+                [36m</h4>[39m
+                [36m<span>[39m
+                  [0mShort Answer Question[0m
+                [36m</span>[39m
+              [36m</div>[39m
+              [36m<div>[39m
+                [36m<h4>[39m
+                  [0mColors[0m
+                [36m</h4>[39m
+                [36m<div>[39m
+                  [36m<p>[39m
+                    [0mWhich of these is a color?[0m
+                  [36m</p>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"form-check"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"form-check-input"[39m
+                      [33mid[39m=[32m"answer-choice-red"[39m
+                      [33mname[39m=[32m"Colors answers"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                      [33mvalue[39m=[32m"red"[39m
+                    [36m/>[39m
+                    [36m<label[39m
+                      [33mclass[39m=[32m"form-check-label"[39m
+                      [33mfor[39m=[32m"answer-choice-red"[39m
+                      [33mtitle[39m=[32m""[39m
+                    [36m>[39m
+                      [0mred[0m
+                    [36m</label>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"form-check"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"form-check-input"[39m
+                      [33mid[39m=[32m"answer-choice-apple"[39m
+                      [33mname[39m=[32m"Colors answers"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                      [33mvalue[39m=[32m"apple"[39m
+                    [36m/>[39m
+                    [36m<label[39m
+                      [33mclass[39m=[32m"form-check-label"[39m
+                      [33mfor[39m=[32m"answer-choice-apple"[39m
+                      [33mtitle[39m=[32m""[39m
+                    [36m>[39m
+                      [0mapple[0m
+                    [36m</label>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"form-check"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"form-check-input"[39m
+                      [33mid[39m=[32m"answer-choice-firetruck"[39m
+                      [33mname[39m=[32m"Colors answers"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                      [33mvalue[39m=[32m"firetruck"[39m
+                    [36m/>[39m
+                    [36m<label[39m
+                      [33mclass[39m=[32m"form-check-label"[39m
+                      [33mfor[39m=[32m"answer-choice-firetruck"[39m
+                      [33mtitle[39m=[32m""[39m
+                    [36m>[39m
+                      [0mfiretruck[0m
+                    [36m</label>[39m
+                  [36m</div>[39m
+                  [36m<p>[39m
+                    [0mCurrent Answer is:[0m
+                    [0m [0m
+                    [0mIncorrect ❌[0m
+                  [36m</p>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<div>[39m
+                [36m<h4>[39m
+                  [0mShapes[0m
+                [36m</h4>[39m
+                [36m<div>[39m
+                  [36m<p>[39m
+                    [0mWhat shape can you make with one line?[0m
+                  [36m</p>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"form-check"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"form-check-input"[39m
+                      [33mid[39m=[32m"answer-choice-square"[39m
+                      [33mname[39m=[32m"Shapes answers"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                      [33mvalue[39m=[32m"square"[39m
+                    [36m/>[39m
+                    [36m<label[39m
+                      [33mclass[39m=[32m"form-check-label"[39m
+                      [33mfor[39m=[32m"answer-choice-square"[39m
+                      [33mtitle[39m=[32m""[39m
+                    [36m>[39m
+                      [0msquare[0m
+                    [36m</label>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"form-check"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"form-check-input"[39m
+                      [33mid[39m=[32m"answer-choice-triangle"[39m
+                      [33mname[39m=[32m"Shapes answers"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                      [33mvalue[39m=[32m"triangle"[39m
+                    [36m/>[39m
+                    [36m<label[39m
+                      [33mclass[39m=[32m"form-check-label"[39m
+                      [33mfor[39m=[32m"answer-choice-triangle"[39m
+                      [33mtitle[39m=[32m""[39m
+                    [36m>[39m
+                      [0mtriangle[0m
+                    [36m</label>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"form-check"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"form-check-input"[39m
+                      [33mid[39m=[32m"answer-choice-circle"[39m
+                      [33mname[39m=[32m"Shapes answers"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                      [33mvalue[39m=[32m"circle"[39m
+                    [36m/>[39m
+                    [36m<label[39m
+                      [33mclass[39m=[32m"form-check-label"[39m
+                      [33mfor[39m=[32m"answer-choice-circle"[39m
+                      [33mtitle[39m=[32m""[39m
+                    [36m>[39m
+                      [0mcircle[0m
+                    [36m</label>[39m
+                  [36m</div>[39m
+                  [36m<p>[39m
+                    [0mCurrent Answer is:[0m
+                    [0m [0m
+                    [0mIncorrect ❌[0m
+                  [36m</p>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
           [36m</div>[39m
           [36m<img[39m
             [33malt[39m=[32m"Sketch of Quizzer"[39m
@@ -490,5 +846,5 @@ FAIL src/App.test.tsx
 Test Suites: 1 failed, 21 passed, 22 total
 Tests:       1 failed, 135 passed, 136 total
 Snapshots:   0 total
-Time:        12.897 s
+Time:        17.047 s
 Ran all test suites.
